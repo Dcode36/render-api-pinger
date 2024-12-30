@@ -14,7 +14,7 @@ const urlsToPing = [
   "https://style-craft-server.onrender.com/",
   "https://taks-management-apis.onrender.com/",
   "https://zomato-clone-06.onrender.com/api",
-  `http://localhost:${port}`, // Replace with your Render URL after deployment
+  "https://render-api-pinger.onrender.com/", // Replace with your Render URL after deployment
 ];
 
 // Function to ping a specific API
