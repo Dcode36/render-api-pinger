@@ -11,10 +11,12 @@ app.get("/", (req, res) => {
 
 // URLs to keep alive
 const urlsToPing = [
+  "https://shift-planning-system.onrender.com/",
   "https://style-craft-server.onrender.com/",
   "https://taks-management-apis.onrender.com/",
   "https://zomato-clone-06.onrender.com/api",
-  "https://render-api-pinger.onrender.com/", // Replace with your Render URL after deployment
+  "https://render-api-pinger.onrender.com/",
+  // Replace with your Render URL after deployment
 ];
 
 // Function to ping a specific API
@@ -32,7 +34,7 @@ const pingApi = (url, interval) => {
 // Set up individual pings with different intervals
 const setupPingIntervals = () => {
   // Assign different intervals (in milliseconds) for each API
-  const intervals = [15000, 20000, 25000, 30000]; // Convert minutes to milliseconds
+  const intervals = [10000, 15000, 20000, 25000, 30000]; // Convert minutes to milliseconds
 
   urlsToPing.forEach((url, index) => {
     const interval = intervals[index] || 30000; // Default to 30s if intervals array is shorter
