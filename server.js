@@ -31,7 +31,7 @@ const pingApi = (url, interval) => {
 // Set up individual pings with different intervals
 const setupPingIntervals = () => {
   // Assign different intervals (in milliseconds) for each API
-  const intervals = [10000, 15000, 20000, 25000, 30000]; // Convert minutes to milliseconds
+  const intervals = [10000, 15000]; // Convert minutes to milliseconds
 
   urlsToPing.forEach((url, index) => {
     const interval = intervals[index] || 30000; // Default to 30s if intervals array is shorter
