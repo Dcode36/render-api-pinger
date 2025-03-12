@@ -11,11 +11,8 @@ app.get("/", (req, res) => {
 
 // URLs to keep alive
 const urlsToPing = [
-  "https://shift-planning-system.onrender.com/",
-  "https://style-craft-server.onrender.com/",
-  "https://taks-management-apis.onrender.com/",
-  "https://zomato-clone-06.onrender.com/api",
-  "https://render-api-pinger.onrender.com/",
+  "https://shift-planning-system-6q5o.onrender.com/",
+  "https://render-api-pinger-imj6.onrender.com",
   // Replace with your Render URL after deployment
 ];
 
